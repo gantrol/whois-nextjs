@@ -11,10 +11,10 @@
 
 [ChatGPT](https://chat.openai.com/)账号可选。
 
-目前进度：实现主页。
+目前进度：实现主页、后端接口转发freeaiapi。
 
-- 部署到 Vercel： [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gantrol/whois-nextjs/tree/step1&project-name=whois-nextjs&repository-name=whois-nextjs)
-- 用Github在线编辑器打开：[![用Github在线编辑器打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/gantrol/whois-nextjs/tree/step1)
+- 部署到 Vercel： [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gantrol/whois-nextjs/tree/step2&project-name=whois-nextjs&repository-name=whois-nextjs)
+- 用Github在线编辑器打开：[![用Github在线编辑器打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/gantrol/whois-nextjs/tree/step2)
 
 ## 基本分析
 
@@ -75,6 +75,6 @@ https://whois.freeaiapi.xyz/?name=${name}&suffix=${suffix}
 > 注意，ChatGPT不一定会提供最优方案，还可能有bug
 
 - src/pages/index.js：网站主页，[对应GPT问答记录](GPT问答记录/1设计index页面.md)
-- src/pages/api/whois.js：后端接口，用于转发外部接口
+- src/pages/api/whois.js：后端接口，用于转发外部接口，[对应GPT问答记录](GPT问答记录/2实现后端whois接口.md)
 - src/pages/whois/[domain].js：搜索详情页
 
