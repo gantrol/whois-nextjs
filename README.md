@@ -16,6 +16,13 @@
 - 部署到 Vercel： [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gantrol/whois-nextjs&project-name=whois-nextjs&repository-name=whois-nextjs)
 - 用Github在线编辑器打开：[![用Github在线编辑器打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/gantrol/whois-nextjs)
 
+后续步骤（对应节点链接，均可一键开发或部署）：
+
+1. [实现主页](https://github.com/gantrol/whois-nextjs/tree/step1)
+2. [实现后端接口（转发freeaiapi）](https://github.com/gantrol/whois-nextjs/tree/step2)
+3. [实现搜索结果页](https://github.com/gantrol/whois-nextjs/tree/step3)
+4. [实现缓存](https://github.com/gantrol/whois-nextjs/tree/step4)
+
 ## 基本分析
 
 ### 用户案例
