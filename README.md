@@ -11,10 +11,11 @@
 
 [ChatGPT](https://chat.openai.com/)账号可选。
 
-目前进度：完成基本设计、搭建项目框架。
+目前进度：完成基本设计、搭建项目框架。你可以：
 
 - 部署到 Vercel： [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gantrol/whois-nextjs&project-name=whois-nextjs&repository-name=whois-nextjs)
 - 用Github在线编辑器打开：[![用Github在线编辑器打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/gantrol/whois-nextjs)
+- fork 为自己的项目（注意修改上述两个按钮的链接）
 
 后续步骤（对应节点链接，均可一键开发或部署）：
 
