@@ -13,8 +13,8 @@
 
 目前进度：实现主页、后端接口转发freeaiapi、搜索结果页。
 
-- 部署到 Vercel： [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gantrol/whois-nextjs/tree/step3&project-name=whois-nextjs&repository-name=whois-nextjs)
-- 用Github在线编辑器打开：[![用Github在线编辑器打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/gantrol/whois-nextjs/tree/step3)
+- 部署到 Vercel： [![部署到 Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gantrol/whois-nextjs/tree/step4&project-name=whois-nextjs&repository-name=whois-nextjs)
+- 用Github在线编辑器打开：[![用Github在线编辑器打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/gantrol/whois-nextjs/tree/step4)
 
 ## 基本分析
 
