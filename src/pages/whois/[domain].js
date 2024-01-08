@@ -1,35 +1,6 @@
-import { Box, Flex, Text, Spinner, Alert, AlertIcon } from "@chakra-ui/react";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { Box, Flex, Text, Alert, AlertIcon } from "@chakra-ui/react";
 
-export default function Whois() {
-    const router = useRouter();
-    const { domain } = router.query;
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
-    const [domainInfo, setDomainInfo] = useState(null);
-
-    useEffect(() => {
-        if (domain) {
-            setLoading(true);
-            fetch(`/api/whois?domain=${domain}`)
-                .then(res => res.json())
-                .then(data => {
-                    setDomainInfo(data);
-                    setLoading(false);
-                })
-                .catch(error => {
-                    console.error("Error fetching domain info:", error);
-                    setError("无法获取域名信息，请稍后重试。");
-                    setLoading(false);
-                });
-        }
-    }, [domain]);
-
-    if (loading) {
-        return <Spinner />;
-    }
-
+export default function Whois({ domainInfo, error }) {
     if (error) {
         return (
             <Alert status="error">
@@ -58,4 +29,24 @@ export default function Whois() {
             )}
         </Flex>
     );
+}
+
+export async function getServerSideProps(context) {
+    const domain = context.query.domain;
+    let domainInfo = null;
+    let error = null;
+
+    if (domain) {
+        try {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/whois?domain=${domain}`);
+            domainInfo = await res.json();
+        } catch (err) {
+            console.error("Error fetching domain info:", err);
+            error = "无法获取域名信息，请稍后重试。";
+        }
+    }
+
+    return {
+        props: { domainInfo, error }, // 将会被传递给页面组件作为props
+    };
 }
